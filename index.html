@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ivan Angelo — Portfolio</title>
+<meta name="description" content="Portfolio of Ivan Angelo: simple, smart and impactful digital experiences.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="ast" viewBox="0 0 24 24"><path d="M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></symbol>
+  </defs>
+</svg>
+
+<div class="frame">
+<div class="stage">
+  <div class="grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Portfolio, home">Portfolio<sup>®</sup></a>
+    <nav aria-label="Primary">
+      <ul class="nav__list" id="nav-list">
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <p class="hero__ghost" aria-hidden="true">IVAN ANGELO</p>
+
+      <figure class="portrait">
+        <img class="portrait__art" src="assets/images/ivang.png" width="2476" height="3812" alt="Ivan Angelo in a graduation cap and gown" decoding="async">
+      </figure>
+
+      <p class="hero__intro">I develop & design user-centered digital experiences that are simple, smart and impactful.</p>
+
+      <aside class="featured" aria-label="Featured project">
+        <a href="#projects">
+          <figure>
+            <svg class="thumb" viewBox="0 0 160 160" role="img" aria-label="Zentix product render">
+              <rect width="160" height="160" fill="#d9942a"/>
+              <g transform="rotate(-14 80 84)">
+                <rect x="26" y="50" width="56" height="56" rx="7" fill="#ececec"/>
+                <circle cx="54" cy="70" r="10" fill="#b9b9b9"/><circle cx="40" cy="92" r="3" fill="#333"/><circle cx="66" cy="92" r="3" fill="#333"/>
+                <rect x="82" y="58" width="56" height="56" rx="7" fill="#d7461f"/>
+                <circle cx="110" cy="80" r="9" fill="#f4f4f4"/><circle cx="96" cy="102" r="3" fill="#3a3aff"/><circle cx="124" cy="102" r="3" fill="#222"/>
+              </g>
+            </svg>
+            <figcaption><span><svg class="ast" aria-hidden="true"><use href="#ast"/></svg>YWEP</span><span>/Web Dev</span></figcaption>
+          </figure>
+        </a>
+      </aside>
+
+      <div class="hero__title">
+        <h1 id="hero-title"><span data-tech="IVAN">Ivan</span> <span data-tech="ANGELO">Angelo</span></h1>
+      </div>
+
+      <aside class="contact" id="contact" aria-label="Contact">
+        <img class="avatar" src="assets/images/ivang.png" width="320" height="320" alt="" decoding="async">
+        <div class="contact__text">
+          <p>Let’s Talk</p>
+          <p><strong>Ivan Angelo</strong><small>Web Developer</small></p>
+        </div>
+        <div class="contact__side">
+          <svg class="ast" aria-hidden="true"><use href="#ast"/></svg>
+          <a class="contact__go" href="mailto:hello@example.com" aria-label="Email Ivan Angelo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+          </a>
+        </div>
+      </aside>
+    </section>
+  </main>
+</div>
+</div>
+
+<!-- Transition: hero -> dark. Not part of the About section. -->
+<div class="transition" aria-hidden="true">
+  <div class="ascii" data-ascii></div>
+</div>
+
+<!-- About: carousel first, then the text -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <!-- Each <img> becomes a holo card. Use card art (about 63:88 portrait) for best results.
+       data-preset: bursts | stars | shards | cosmos | rainbow | swirl | glitter | gold   (optional data-foil="#hex"). 6–8 cards works best. -->
+  <div class="about__carousel">
+    <div data-carousel>
+      <img data-preset="bursts" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=900&q=80&auto=format&fit=max&sat=-100" alt="Mist drifting through a mountain valley">
+      <img data-preset="stars" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80&auto=format&fit=max&sat=-100" alt="A woman with long hair in soft studio light">
+      <img data-preset="shards" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80&auto=format&fit=max&sat=-100" alt="Glass towers seen from street level">
+      <img data-preset="cosmos" src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=900&q=80&auto=format&fit=max&sat=-100" alt="A surfer carving inside a breaking wave">
+      <img data-preset="swirl" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=max&sat=-100" alt="An angular white building against the sky">
+      <img data-preset="glitter" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=900&q=80&auto=format&fit=max&sat=-100" alt="The Milky Way above snowy peaks">
+      <img data-preset="gold" src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=900&q=80&auto=format&fit=max&sat=-100" alt="A woman in a long coat on a city street">
+      <img data-preset="rainbow" src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=900&q=80&auto=format&fit=max&sat=-100" alt="Mountains mirrored in a still lake">
+    </div>
+  </div>
+  <div class="about__body">
+    <h2 class="about__label" id="about-title"><svg class="ast" aria-hidden="true"><use href="#ast"/></svg>About</h2>
+    <div class="about__copy">
+      <p class="about__lead">I’m a web developer who designs and builds interfaces from the first sketch to the shipped page.</p>
+      <p>I care about clear structure, fast load times and the small details people notice without being told to.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects. Replace the picsum placeholders, titles, meta and descriptions (data-* attributes) with your own. -->
+<section class="projects" id="projects" aria-labelledby="projects-title">
+  <div class="projects__wrap">
+    <div class="projects__head">
+      <h2 class="projects__label" id="projects-title"><svg class="ast" aria-hidden="true"><use href="#ast"/></svg>Projects</h2>
+      <p class="projects__lead">Things I’ve designed and built, lately.</p>
+    </div>
+
+    <div class="projects__gallery" data-accordion>
+      <a href="#projects" data-title="Project One" data-meta="Web Development · 2026" data-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam."><img src="https://picsum.photos/id/1015/900/1200" alt="Canyon landscape"></a>
+      <a href="#projects" data-title="Project Two" data-meta="Web Design · 2026" data-desc="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."><img src="https://picsum.photos/id/1018/900/1200" alt="Ridgeline landscape"></a>
+      <a href="#projects" data-title="Project Three" data-meta="Web Development · 2025" data-desc="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."><img src="https://picsum.photos/id/1039/900/1200" alt="Waterfall landscape"></a>
+      <a href="#projects" data-title="Project Four" data-meta="Branding · 2025" data-desc="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus."><img src="https://picsum.photos/id/1043/900/1200" alt="Harbour landscape"></a>
+      <a href="#projects" data-title="Project Five" data-meta="Web App · 2024" data-desc="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi."><img src="https://picsum.photos/id/1044/900/1200" alt="Skyline landscape"></a>
+    </div>
+
+    <div class="projects__detail" aria-live="polite" aria-atomic="true">
+      <div class="projects__side">
+        <p class="projects__count"><span data-pd="index">03</span> / <span>05</span></p>
+        <p class="projects__meta" data-pd="meta">Web Development · 2025</p>
+      </div>
+      <div class="projects__main">
+        <h3 class="projects__title" data-pd="title">Project Three</h3>
+        <p class="projects__desc" data-pd="desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        <a class="projects__link" data-pd="link" href="#projects">View project <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="gradient-ascii.js"></script>
+<script src="holo-card.js"></script>
+<script src="circular-carousel.js"></script>
+<script src="accordion-gallery.js"></script>
+<script src="tech-text.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
